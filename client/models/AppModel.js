@@ -24,7 +24,6 @@ var AppModel = Backbone.Model.extend({
     }, this);
 
     params.library.on('dequeue', function() {
-      
       this.get('songQueue').dequeue();
       var song = this.get('songQueue').at(0);
       this.set('currentSong', song);
