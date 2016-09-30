@@ -13,6 +13,7 @@ describe('LibraryEntryView', function() {
 
   // This spec passes already, but it's mutually exclusive with the one below.
   // Comment it out when implementing the song queue.
+  /*
   it ('plays clicked songs', function() {
     sinon.spy(SongModel.prototype, 'play');
 
@@ -21,7 +22,8 @@ describe('LibraryEntryView', function() {
 
     SongModel.prototype.play.restore();
   });
-
+  */
+  
   it('queues clicked songs', function() {
     sinon.spy(SongModel.prototype, 'enqueue');
 
